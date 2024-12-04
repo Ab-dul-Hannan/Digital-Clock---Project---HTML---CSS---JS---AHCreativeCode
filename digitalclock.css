@@ -1,0 +1,60 @@
+/* Digital - Clock - Project - HTML - CSS - JS - AHCreativeCode */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-box {
+    height: 150px;
+    width: 440px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-box .clock{
+    font-weight: 900;
+    font-size: 48px;
+    /* for image 1 */
+    color: black;
+    /* for image 2 */
+    /* color: white; */
+    letter-spacing: 6px;
+}
+
+@media (max-width: 480px){
+    .clock-box {
+        height: 150px;
+        width: 340px;
+    }
+    .clock-box .clock{
+        font-size: 36px;
+    }  
+}
+
+@media (max-width: 350px){
+    .clock-box {
+        height: 120px;
+        width: 300px;
+    }
+    .clock-box .clock{
+        font-size: 32px;
+    }  
+}
